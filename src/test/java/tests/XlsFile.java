@@ -3,8 +3,6 @@ package tests;
 import com.codeborne.xlstest.XLS;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static tweaks.Files.getXls;
 
