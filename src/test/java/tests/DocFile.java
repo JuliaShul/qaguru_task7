@@ -1,7 +1,6 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -11,9 +10,9 @@ import static tweaks.Files.readTextFromPath;
 public class DocFile {
     @Test
     void checkDocFile() throws IOException {
-        String Path = "./src/test/resources/files/doc.doc";
+        String path = "./src/test/resources/files/doc.doc";
         String expectedData = "I FEEL SUCCESS";
-        String actualData = readTextFromPath(Path);
+        String actualData = readTextFromPath(path);
 
         assertThat(actualData, containsString(expectedData));
 
