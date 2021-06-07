@@ -17,6 +17,6 @@ public class PdfFile {
         String Path = "./src/test/resources/files/document.pdf";
         String expectedData = "I FEEL SUCCESS";
         PDF pdf = getPdf(Path);
-        assertThat(pdf, containsText(expectedData));
+        assertThat(pdf, PDF.containsText(expectedData));
     }
 }
